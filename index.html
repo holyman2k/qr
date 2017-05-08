@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>QR Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+    <div id="page-wrap">
+        <div class="container">
+            <h1>QR Maker</h1>
+            <p>QR Maker is a QR Code generator written in pure JavaScript. The code is based on Jerome Etienne's <a href="http://jeromeetienne.github.io/jquery-qrcode/">jquery.qrcode.js</a></p>
+            <p>The advantage of been pure javascript based is text does not leave your computer to another server, in another
+                word, it's fast and secure</p>
+
+            <p>&nbsp;</p>
+
+            <form onsubmit="return false">
+                <div class="form-group">
+                    <textarea id="textField" type="text" class="form-control" placeholder="Enter your message here" rows="3"></textarea>
+                </div>
+            </form>
+
+
+            <div id="qrcode"></div>
+            <div class="action-container">
+                <a id="btn-download" class="btn btn-primary" download="qrcode.png">Download</a>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </div>
+    <!--end wrap-->
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">&copy; 2015 <a href="http://charlie.cu.cc">Charlie Wu</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
